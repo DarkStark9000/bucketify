@@ -17,13 +17,14 @@ body {
 }
 
 .item-img {
-  height: 200px;
-  width: 180px;
+  height: 240px;
+  width: 100%;
   margin: 0 auto;
+  background-color: transparent;
 }
 
 .price-text {
-  background: linear-gradient(35deg, #ffea7b -60%, #53e488 120%);
+  background: linear-gradient(45deg, #00bc55 -80%, #dbff29 180%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
