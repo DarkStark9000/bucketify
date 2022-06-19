@@ -1,8 +1,12 @@
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { green } from "@mui/material/colors";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../features/cart/CartSlice";
 
 function Card(props) {
+  const dispatch = useDispatch();
   const accent = green.A200;
+
   return (
     <div>
       <div className="flex flex-col rounded-lg w-48 h-96 outline-1 border	shadow-lg relative	">
@@ -13,7 +17,10 @@ function Card(props) {
         </span>
         <button className="bg-slate-900 absolute bottom-4 right-4 left-4 font-bold text-base border-2 p-1 rounded-lg">
           <AddShoppingCartIcon style={{ color: accent }} className="mx-2" />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          <span
+            onClick={() => dispatch(addToCart(props.item.title, props.item.price, 1))}
+            className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+          >
             add to cart
           </span>
         </button>

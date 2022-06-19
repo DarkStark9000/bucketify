@@ -22,7 +22,7 @@ function Products() {
   }, []);
 
   return (
-    <div className="m-auto w-5/6 flex flex-row gap-10 flex-wrap">
+    <div className="grid grid-cols-4 gap-x-1 gap-y-4 place-content-center">
       {shopData.map((item) => (
         <Card key={item.id} item={item} />
       ))}
