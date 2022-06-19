@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import NavCartinfo from "./NavCartinfo";
 import NavUserInfo from "./NavUserInfo";
 import SearchBar from "./SearchBar";
@@ -9,7 +10,9 @@ function Navbar() {
       <SearchBar />
       <div className="m-auto mr-8 flex justify-center items-center gap-x-8">
         <NavUserInfo />
-        <NavCartinfo />
+        <NavLink to="/cart">
+          <NavCartinfo />
+        </NavLink>
       </div>
     </div>
   );

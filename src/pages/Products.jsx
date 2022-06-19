@@ -6,11 +6,10 @@ function Products() {
   const [shopData, setShopData] = useState([]);
 
   const getShopData = async () => {
-    axios
+    await axios
       .get("https://fakestoreapi.com/products")
       .then((response) => {
         setShopData(response.data);
-        // localStorage.setItem("shopData", JSON.stringify(response.data));
       })
       .catch((err) => {
         console.log(err);
