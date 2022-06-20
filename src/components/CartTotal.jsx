@@ -78,7 +78,7 @@ function CartTotal() {
                 }}
                 onChange={(e) => setTotal(e.target.value)}
               >
-                $ {productInCart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0)}
+                $ {productInCart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0).toFixed(2)}
               </TableCell>
             </TableRow>
           </TableBody>
