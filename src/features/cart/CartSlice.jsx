@@ -29,6 +29,10 @@ export const CartSlice = createSlice({
     deleteSingularItem(state, action) {
       const product = action.payload;
       state.inCart.find((p) => p.name === product).quantity -= 1;
+
+      if (state.inCart.find((p) => p.name === product).quantity === 0) {
+        state.inCart = state.inCart.filter((item) => item.name !== product);
+      }
     },
   },
 });

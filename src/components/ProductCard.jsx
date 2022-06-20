@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { green } from "@mui/material/colors";
 import { useDispatch } from "react-redux";
@@ -21,7 +22,7 @@ function ProductCard(props) {
   };
 
   return (
-    <div>
+    <motion.div>
       <div className="bg-slate-50 flex flex-col rounded-lg w-48 h-96 outline-1 border	shadow-lg relative">
         <img className="item-img rounded-lg" src={props.item.image} alt={props.item.title} />
         <span className="leading-tight text-sm text-black	tracking-tighter mt-2 mx-4">{props.item.title}</span>
@@ -39,7 +40,10 @@ function ProductCard(props) {
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
-        <button
+        <motion.button
+          variant="contained"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.85 }}
           onClick={() => dispatch(addToCart({ ...productInfo, quantity }))}
           className="bg-slate-900 absolute bottom-4 right-4 left-4 font-bold text-base border-2 p-1 rounded-lg"
         >
@@ -47,9 +51,9 @@ function ProductCard(props) {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
             add to cart
           </span>
-        </button>
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
