@@ -3,7 +3,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useSelector } from "react-redux";
 
 function NavCartinfo() {
-  const totalProducts = useSelector((state) => state.cart.name.length);
+  const totalProducts = useSelector((state) => state.cart.inCart.length);
 
   return (
     <div className="flex flex-col">

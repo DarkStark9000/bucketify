@@ -1,22 +1,22 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { addToCart, removeFromCart } from "../features/cart/CartSlice";
+import { useSelector } from "react-redux";
+import Navbar from "../components/Navbar";
+import CartCard from "../components/CartCard";
+import CartTotal from "../components/CartTotal";
 
 function Cart() {
   const productInCart = useSelector((state) => state.cart.inCart);
-  const dispatch = useDispatch();
 
   return (
     <div>
-      <h1>Cart</h1>
+      <Navbar />
+      <h1 className="text-2xl	font-bold text-center	p-6">Cart Checkout</h1>
       {productInCart.map((product) => (
-        <div key={product.name}>
-          <p>{product.name}</p>
-          <p>{product.price}</p>
-          <p>{product.quantity}</p>
-          <button onClick={() => dispatch(removeFromCart(product.name))}>Remove</button>
-        </div>
+        <CartCard key={product.name} product={product} />
       ))}
+      <div className="absolute right-14 top-20">
+        <CartTotal />
+      </div>
     </div>
   );
 }
