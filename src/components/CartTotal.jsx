@@ -54,7 +54,7 @@ function CartTotal() {
                   }}
                   align="right"
                 >
-                  $ {product.price * product.quantity}
+                  $ {(product.price * product.quantity).toFixed(2)}
                 </TableCell>
               </TableRow>
             ))}
@@ -68,7 +68,7 @@ function CartTotal() {
                 Total
               </TableCell>
               <TableCell
-                colspan={2}
+                colSpan={2}
                 align="right"
                 sx={{
                   fontWeight: "bold",
