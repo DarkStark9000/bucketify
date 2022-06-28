@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Navbar from "../components/Navbar";
 import CartCard from "../components/CartCard";
 import CartTotal from "../components/CartTotal";
+import CheckoutAndEmail from "../components/CheckoutAndEmail";
 
 function Cart() {
   const productInCart = useSelector((state) => state.cart.inCart);
@@ -10,7 +11,7 @@ function Cart() {
   return (
     <div>
       <Navbar />
-      <h1 className="text-2xl	font-bold text-center	p-6">Cart Checkout</h1>
+      <h1 className="text-2xl	font-bold text-fuchsia-50 text-center	p-6">Cart Checkout</h1>
       <div className="flex flex-row justify-center">
         <div className="mx-auto mr-0">
           {productInCart.map((product) => (
@@ -19,6 +20,7 @@ function Cart() {
         </div>
         <div className="mx-auto mr-8 w-96 text-sm sticky top-4">
           <CartTotal />
+          <CheckoutAndEmail />
         </div>
       </div>
     </div>

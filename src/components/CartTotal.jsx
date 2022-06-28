@@ -84,6 +84,7 @@ function CartTotal() {
           </TableBody>
         </Table>
       </TableContainer>
+
     </div>
   );
 }

@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --black: ;
-  --emerald: ;
-  --sky-blue: ;
-}
-
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
+
+  background: rgb(182, 184, 254);
+  background: linear-gradient(45deg, rgba(182, 184, 254, 1) 14%, rgba(199, 255, 190, 1) 90%) fixed;
 }
 
 .item-img {
@@ -23,10 +20,22 @@ body {
   background-color: transparent;
 }
 
-.price-text {
-  background: linear-gradient(45deg, #00bc55 -80%, #dbff29 180%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+.glassmorph {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.neumorph {
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.claymorph {
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
 }

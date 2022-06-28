@@ -9,7 +9,7 @@ function CartCard({ product }) {
   const dispatch = useDispatch();
 
   return (
-    <div key={product.name} className="relative border shadow-md rounded-md p-4 w-96 h-32 flex mb-4">
+    <div key={product.name} className="claymorph relative border shadow-md rounded-md p-4 w-96 h-32 flex mb-4">
       <img className="h-18 w-24" src={product.imageurl} alt={product.name} />
       <div className="flex flex-col justify-between ml-2">
         <div className="px-4 pt-2 flex flex-row justify-center item-center leading-3 flex-wrap">

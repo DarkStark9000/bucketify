@@ -23,7 +23,7 @@ function ProductCard(props) {
 
   return (
     <motion.div>
-      <div className="bg-slate-50 flex flex-col rounded-lg w-48 h-96 outline-1 border	shadow-lg relative">
+      <div className="glassmorph flex flex-col rounded-lg w-48 h-96 outline-1 border shadow-md relative">
         <img className="item-img rounded-lg" src={props.item.image} alt={props.item.title} />
         <span className="leading-tight text-sm text-black	tracking-tighter mt-2 mx-4">{props.item.title}</span>
         <span className="absolute bottom-12 left-4 text-emerald-500 font-bold p-1	text-lg	subpixel-antialiased tracking-normal">
@@ -45,7 +45,7 @@ function ProductCard(props) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.85 }}
           onClick={() => dispatch(addToCart({ ...productInfo, quantity }))}
-          className="bg-slate-900 absolute bottom-4 right-4 left-4 font-bold text-base border-2 p-1 rounded-lg"
+          className="neumorph shadow-lg absolute bottom-4 right-4 left-4 font-bold text-base p-1 "
         >
           <AddShoppingCartIcon style={{ color: accent }} className="mx-2" />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
