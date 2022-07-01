@@ -1,25 +1,25 @@
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Button from "@mui/material/Button";
+import { collection, doc, setDoc } from "firebase/firestore";
+import { clearCartOnCheckout } from "../features/cart/CartSlice";
+import { db } from "../utils/Firebase";
 
 function CheckoutAndEmail() {
-  const productInCart = useSelector((state) => state.cart.inCart);
+  const dispatch = useDispatch();
 
+  const productInCart = useSelector((state) => state.cart.inCart);
   const email = useSelector((state) => state.user.isUser.email);
   const name = useSelector((state) => state.user.isUser.displayName);
 
   const total = productInCart.reduce((acc, product) => acc + product.price * product.quantity, 0);
   let message = productInCart
     .map((product) => `${product.name} - ${product.quantity} - ${product.quantity * product.price}`)
-    .join("\n");
+    .join("<br/>");
 
-  message.replace(/\n/g, "<br>");
-  message.replace(/\s/g, "&nbsp;");
+  message += `<br/><br/><b>Total Amount: ${total} </b>`;
 
-  message += `\n\n<b>Total Amount: ${total} </b>`;
-
-  // const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleCheckout = (e) => {
@@ -32,6 +32,9 @@ function CheckoutAndEmail() {
       .catch((error) => {
         console.log("FAILED...", error);
       });
+
+    dispatch(clearCartOnCheckout());
+    // saveOrderDetailsOfUser();
 
     navigate("/");
   };

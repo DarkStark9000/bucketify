@@ -21,6 +21,7 @@ function Logout() {
           displayName: "",
           email: "",
           photoURL: "",
+          address: "",
         };
         dispatch(clearUserOnLogout(loggedOutUser));
         navigate("/");
@@ -31,7 +32,7 @@ function Logout() {
   };
   return (
     <div>
-      <Button variant="outlined" onClick={handleLogoutClick}>
+      <Button size="small" variant="outlined" onClick={handleLogoutClick}>
         Logout
       </Button>
     </div>

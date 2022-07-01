@@ -34,7 +34,11 @@ export const CartSlice = createSlice({
         state.inCart = state.inCart.filter((item) => item.name !== product);
       }
     },
+    clearCartOnCheckout(state) {
+      state.inCart = [];
+    },
   },
 });
-export const { addToCart, removeFromCart, addSingularItem, deleteSingularItem } = CartSlice.actions;
+export const { addToCart, removeFromCart, addSingularItem, deleteSingularItem, clearCartOnCheckout } =
+  CartSlice.actions;
 export default CartSlice.reducer;

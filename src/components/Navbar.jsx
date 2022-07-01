@@ -12,12 +12,12 @@ function Navbar() {
 
   return (
     <div className="sticky top-0 z-50  shadow-sm  bg-white bg-opacity-75 bg-blur-xl">
-      <div className="flex justify-center items-center p-4 mx-4">
+      <div className="flex justify-center items-center p-4 ml-2 mr-4">
         <NavLink to="/">
           <HomeLogo />
         </NavLink>
         <SearchBar />
-        <div className="m-auto mr-8 flex justify-center items-center gap-x-8">
+        <div className="m-auto mr-2 flex justify-center items-center gap-x-6">
           <NavUserInfo />
           <NavLink to="/cart">
             <NavCartinfo />

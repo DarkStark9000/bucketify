@@ -2,6 +2,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import { useSelector, useDispatch } from "react-redux";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { setUserOnLogin } from "../features/user/UserSlice";
+
 import app from "../utils/Firebase";
 
 function NavUserInfo() {
@@ -20,6 +21,7 @@ function NavUserInfo() {
           displayName: result.user.displayName,
           email: result.user.email,
           photoURL: result.user.photoURL,
+          address: "",
         };
         dispatch(setUserOnLogin(userLogIn));
       })
@@ -39,8 +41,6 @@ function NavUserInfo() {
         {user.displayName ? user.displayName : "Log In"}
       </span>
     </div>
-
-    
   );
 }
 

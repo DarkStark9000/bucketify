@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import Navbar from "../components/Navbar";
 import CartCard from "../components/CartCard";
 import CartTotal from "../components/CartTotal";
-import CheckoutAndEmail from "../components/CheckoutAndEmail";
 
 function Cart() {
   const productInCart = useSelector((state) => state.cart.inCart);
@@ -20,7 +19,6 @@ function Cart() {
         </div>
         <div className="mx-auto mr-8 w-96 text-sm sticky top-4">
           <CartTotal />
-          <CheckoutAndEmail />
         </div>
       </div>
     </div>

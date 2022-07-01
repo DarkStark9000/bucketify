@@ -1,5 +1,7 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from "@reduxjs/toolkit";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../utils/Firebase";
 
 const initialState = {
   isUser: [
@@ -9,6 +11,7 @@ const initialState = {
       displayName: "",
       email: "",
       photoURL: "",
+      address: "",
     },
   ],
 };
@@ -19,11 +22,19 @@ export const UserSlice = createSlice({
   reducers: {
     setUserOnLogin(state, action) {
       state.isUser = action.payload;
+
+      const toAddUser = {
+        email: action.payload.email,
+        displayName: action.payload.displayName,
+        photoURL: action.payload.photoURL,
+        address: action.payload.address,
+      };
+      setDoc(doc(db, "users", toAddUser.email), toAddUser);
     },
     clearUserOnLogout(state, action) {
       state.isUser = action.payload;
     },
   },
 });
-export const { setUserOnLogin, clearUserOnLogout } = UserSlice.actions;
+export const { setUserOnLogin, clearUserOnLogout, addUserToFirebaseDatabase } = UserSlice.actions;
 export default UserSlice.reducer;

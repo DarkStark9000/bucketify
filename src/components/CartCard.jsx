@@ -13,8 +13,8 @@ function CartCard({ product }) {
       <img className="h-18 w-24" src={product.imageurl} alt={product.name} />
       <div className="flex flex-col justify-between ml-2">
         <div className="px-4 pt-2 flex flex-row justify-center item-center leading-3 flex-wrap">
-          <span className="leading-tight text-sm font-normal text-black	tracking-tighter w-40">{product.name}</span>
-          <span className="leading-tight absolute right-4 text-emerald-400 text-md	color font-bold subpixel-antialiased tracking-normal">
+          <span className="leading-tight text-xs font-normal text-black	tracking-tighter w-40">{product.name}</span>
+          <span className="leading-tight absolute right-4 text-emerald-400 text-bases color font-bold subpixel-antialiased tracking-normal">
             $ {product.price}
           </span>
         </div>
