@@ -4,6 +4,8 @@
 
 > See it here 👉 [Bucketify](https://bucketify.vercel.app/)
 
+https://vercelbadge.vercel.app/api/DarkStark9000/bucketify?style=for-the-badge
+
 [//]: # (<a href="https://lgtm.com/projects/g/DarkStark9000/bucketify/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/DarkStark9000/bucketify.svg?logo=lgtm&logoWidth=18"/></a>)
 
 
