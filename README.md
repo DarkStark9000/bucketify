@@ -1,6 +1,5 @@
 
-<img src="https://vercelbadge.vercel.app/api/DarkStark9000/bucketify?style=for-the-badge" />
-<img alt="GitHub" src="https://img.shields.io/github/license/DarkStark9000/bucketify?style=for-the-badge&color=blue">
+<img src="https://vercelbadge.vercel.app/api/DarkStark9000/bucketify?style=for-the-badge" /> <img alt="GitHub" src="https://img.shields.io/github/license/DarkStark9000/bucketify?style=for-the-badge&color=blue">
 
 
 # Bucketify
