@@ -1,10 +1,12 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/571ab907-ca9b-45cd-81e2-1d30df862408/deploy-status)](https://app.netlify.com/sites/bucketify/deploys)
 
+<img src="https://vercelbadge.vercel.app/api/DarkStark9000/bucketify?style=for-the-badge" />
+
+
 # Bucketify
 
 > See it here 👉 [Bucketify](https://bucketify.vercel.app/)
 
-https://vercelbadge.vercel.app/api/DarkStark9000/bucketify?style=for-the-badge
 
 [//]: # (<a href="https://lgtm.com/projects/g/DarkStark9000/bucketify/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/DarkStark9000/bucketify.svg?logo=lgtm&logoWidth=18"/></a>)
 
