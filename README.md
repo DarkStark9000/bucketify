@@ -1,6 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/571ab907-ca9b-45cd-81e2-1d30df862408/deploy-status)](https://app.netlify.com/sites/bucketify/deploys)
 
 <img src="https://vercelbadge.vercel.app/api/DarkStark9000/bucketify?style=for-the-badge" />
+<img alt="GitHub" src="https://img.shields.io/github/license/DarkStark9000/bucketify?style=for-the-badge&color=blue">
 
 
 # Bucketify
