@@ -23,7 +23,7 @@ function ProductCard(props) {
 
   return (
     <motion.div>
-      <div className="glassmorph flex flex-col rounded-lg w-48 h-96 outline-1 border shadow-md relative">
+      <div className="glassmorph flex flex-col rounded-lg w-56 h-96 outline-1 border shadow-md relative md:w-48">
         <img className="item-img rounded-lg" src={props.item.image} alt={props.item.title} />
         <span className="leading-tight text-sm text-black	tracking-tighter mt-2 mx-4">{props.item.title}</span>
         <span className="absolute bottom-12 left-4 text-emerald-500 font-bold p-1	text-lg	subpixel-antialiased tracking-normal">
