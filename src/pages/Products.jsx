@@ -27,7 +27,7 @@ function Products() {
   }, []);
 
   return (
-    <div className="mx-20 grid grid-cols-4 gap-y-6 place-content-center">
+    <div className="sm: mx-20 grid gap-y-6 gap-x-6 place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {shopData.map((item) => (
         <ProductCard key={item.id} item={item} />
       ))}

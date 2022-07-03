@@ -87,9 +87,11 @@ function CartTotal() {
           </Table>
         </TableContainer>
 
-        <div className="checkoutButton my-4 p-2 ">
-          <CheckoutAndEmail />
-        </div>
+        {productInCart.length > 0 && (
+          <div className="checkoutButton my-4 p-2 ">
+            <CheckoutAndEmail />
+          </div>
+        )}
       </div>
     </div>
   );

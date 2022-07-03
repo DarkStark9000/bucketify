@@ -11,7 +11,7 @@ function Navbar() {
   const user = useSelector((state) => state.user.isUser);
 
   return (
-    <div className="sticky top-0 z-50  shadow-sm  bg-white bg-opacity-75 bg-blur-xl">
+    <div className="sticky top-0 z-50 shadow-sm bg-white bg-opacity-50 bg-blur-lg">
       <div className="flex justify-center items-center p-4 ml-2 mr-4">
         <NavLink to="/">
           <HomeLogo />
