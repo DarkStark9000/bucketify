@@ -4,6 +4,8 @@
 
 > See it here 👉 [Bucketify](https://bucketify.vercel.app/)
 
+[//]: # (<a href="https://lgtm.com/projects/g/DarkStark9000/bucketify/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/DarkStark9000/bucketify.svg?logo=lgtm&logoWidth=18"/></a>)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
