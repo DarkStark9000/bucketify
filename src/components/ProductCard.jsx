@@ -18,7 +18,7 @@ function ProductCard(props) {
   };
 
   const handleQuantityChange = (event) => {
-    setQuantity(event.target.value);
+    setQuantity(Number(event.target.value));
   };
 
   return (
@@ -41,7 +41,6 @@ function ProductCard(props) {
           <option value="4">4</option>
         </select>
         <motion.button
-          variant="contained"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.85 }}
           onClick={() => dispatch(addToCart({ ...productInfo, quantity }))}

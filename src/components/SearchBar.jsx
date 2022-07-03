@@ -5,7 +5,7 @@ import { indigo } from "@mui/material/colors";
 function SearchBar() {
   const accent = indigo.A400;
   return (
-    <div className="hidden md:block absolute mx-auto">
+    <div className="hidden md:inline-block absolute mx-auto">
       <div className="flex flex-row gap-1 justify-center items-center	">
         <SearchIcon style={{ color: accent }} />
         <input

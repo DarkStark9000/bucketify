@@ -8,7 +8,7 @@ function NavCartinfo() {
   return (
     <div className="flex flex-col">
       <ShoppingCartIcon />
-      <span className="leading-4	font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500">
+      <span className="leading-4 font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500">
         Cart: {totalProducts}
       </span>
     </div>
