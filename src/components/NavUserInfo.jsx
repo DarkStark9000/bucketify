@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import PersonIcon from "@mui/icons-material/Person";
 import { useSelector, useDispatch } from "react-redux";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
