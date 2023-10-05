@@ -8,10 +8,12 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    '@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react-hooks/recommended',
     'airbnb-base',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
     'prettier'
   ],
@@ -22,7 +24,9 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
-    }
+    },
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname
   },
   plugins: ['@typescript-eslint', 'react', 'jsx-a11y', 'react-refresh', 'prettier'],
   settings: {
