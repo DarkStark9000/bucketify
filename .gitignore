@@ -8,17 +8,121 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+
+# Build directories
+/dist/
+/dist-ssr/
+/build/
 *.local
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+
+# System Files
+.Thumbs.db
+
+# Docker Volumes
+.docker-volumes/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directories
+coverage/
+.nyc_output/
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Compiled files
+*.out
+*.o
+*.obj
+*.dll
+
+# Storybook
+.storybook-out/
+
+# Temporary files
+*.tmp
+*.bak
+*.swx
+*~
+.nib
+*.db
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.*.development
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firebase-functions-config.json
+
+# Supabase
+.supabase/
+supabase-key.json
+
+# Appwrite
+appwrite-config.json
+appwrite-key.json
+
+# Azure
+azure*.json
+*.azure/
+*.publishsettings
+
+# AWS
+.aws/
+*.pem
+*.pk
+aws-config.json
+aws-exports.js
+
+# Netlify
+netlify.toml
+.netlify/
+
+# Vercel
+.vercel/
+vercel.json
+
+# General cloud services
+*.env.production
+*.env.staging
+*.env.test
+*.env.development
+*.yml
+secrets.*
+
+# Generated keys or certificates
+*.key
+*.pem
+*.crt
+*.pfx
+*.jks
