@@ -2,12 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Bucketify - Everything You Need For Your Garden</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-title" content="Bucketify" />
+    <meta name="application-name" content="Bucketify" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="Bucketify offers a curated range of gardening tools, supplies, and seeds. Elevate your gardening experience."
+    />
+    <meta name="keywords" content="Gardening, Tools, Seeds, Supplies, Bucketify" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.bucketify.com/" />
+    <meta property="og:title" content="Bucketify - Elevate Your Gardening Experience" />
+    <meta property="og:description" content="Discover quality gardening tools, supplies, and seeds at Bucketify." />
+    <meta property="og:image" content="/assets/images/social-share-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.bucketify.com/" />
+    <meta property="twitter:title" content="Bucketify - Elevate Your Gardening Experience" />
+    <meta
+      property="twitter:description"
+      content="Discover quality gardening tools, supplies, and seeds at Bucketify."
+    />
+    <meta property="twitter:image" content="/assets/images/social-share-image.png" />
+
+    <!-- Preload Assets -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Inter+Tight:ital,wght@0,300;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="preload" as="image" href="/assets/images/hero-image.jpg" /> -->
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Schema.org for structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.bucketify.com/",
+        "name": "Bucketify",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-800-555-1234",
+          "contactType": "Customer service"
+        }
+      }
+    </script>
   </body>
 </html>
