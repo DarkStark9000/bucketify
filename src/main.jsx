@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "./app/store";
 import App from "./App.jsx";
 import Cart from "./pages/Cart";
+import ThemeToggle from "./components/ThemeToggle";
 import "./index.css";
 
 const container = document.getElementById("root");
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <ThemeToggle />
     </BrowserRouter>
-  </Provider>
+  </Provider>,
 );
