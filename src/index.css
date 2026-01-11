@@ -1,14 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Custom screen breakpoint */
+@theme {
+  --breakpoint-xsm: 500px;
+}
 
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Inter", sans-serif;
   font-size: 16px;
-
   background: rgb(182, 184, 254);
   background: linear-gradient(45deg, rgba(182, 184, 254, 1) 14%, rgba(199, 255, 190, 1) 90%) fixed;
 }

@@ -1,19 +1,22 @@
-/* eslint-disable react/no-unknown-property */
 import PersonIcon from "@mui/icons-material/Person";
 import { useSelector, useDispatch } from "react-redux";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { setUserOnLogin } from "../features/user/UserSlice";
-
 import app from "../utils/Firebase";
 
 function NavUserInfo() {
-  const auth = getAuth();
-  const provider = new GoogleAuthProvider();
-
   const user = useSelector((state) => state.user.isUser);
   const dispatch = useDispatch();
 
   const handleLoginClick = () => {
+    if (!app) {
+      console.warn("Firebase not configured. Cannot sign in.");
+      return;
+    }
+
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
     signInWithPopup(auth, provider)
       .then((result) => {
         const userLogIn = {
@@ -34,7 +37,7 @@ function NavUserInfo() {
   return (
     <div className="cursor-pointer flex flex-col justify-center" onClick={handleLoginClick}>
       {user.photoURL ? (
-        <img className="h-6 w-6" sx={{ borderRadius: "50%" }} src={user.photoURL} alt="user" />
+        <img className="h-6 w-6 rounded-full" src={user.photoURL} alt="user" />
       ) : (
         <PersonIcon />
       )}

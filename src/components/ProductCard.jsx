@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { green } from "@mui/material/colors";
 import { useDispatch } from "react-redux";

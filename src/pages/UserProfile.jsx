@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import motion from "framer-motion";
+import { motion } from "motion/react";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../utils/Firebase";
 

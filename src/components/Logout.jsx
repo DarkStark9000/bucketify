@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { getAuth, signOut } from "firebase/auth";
 import Button from "@mui/material/Button";
@@ -10,9 +9,14 @@ function Logout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const auth = getAuth();
-
   const handleLogoutClick = () => {
+    if (!app) {
+      console.warn("Firebase not configured. Cannot sign out.");
+      return;
+    }
+
+    const auth = getAuth(app);
+
     signOut(auth)
       .then(() => {
         const loggedOutUser = {
@@ -30,6 +34,7 @@ function Logout() {
         console.log(error);
       });
   };
+
   return (
     <div>
       <Button size="small" variant="outlined" onClick={handleLogoutClick}>
