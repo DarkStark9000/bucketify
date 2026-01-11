@@ -22,10 +22,10 @@ function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-accent-subtle)] border border-[var(--color-accent)]/20 mb-6"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-subtle border border-accent/20 mb-6"
               >
-                <span className="w-2 h-2 rounded-full bg-[var(--color-accent)] animate-pulse" />
-                <span className="text-sm font-medium text-[var(--color-accent)]">New Collection Available</span>
+                <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                <span className="text-sm font-medium text-accent">New Collection Available</span>
               </motion.div>
 
               {/* Main Heading */}
@@ -33,11 +33,11 @@ function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="font-display text-4xl md:text-6xl lg:text-7xl text-[var(--color-text-primary)] leading-[1.1] mb-6"
+                className="font-display text-4xl md:text-6xl lg:text-7xl text-text-primary leading-[1.1] mb-6"
               >
                 Discover Products
                 <br />
-                <span className="text-[var(--color-accent)]">You&apos;ll Love</span>
+                <span className="text-accent">You&apos;ll Love</span>
               </motion.h1>
 
               {/* Subtitle */}
@@ -45,7 +45,7 @@ function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-lg md:text-xl text-[var(--color-text-secondary)] mb-10 max-w-xl mx-auto"
+                className="text-lg md:text-xl text-text-secondary mb-10 max-w-xl mx-auto"
               >
                 Curated selection of premium products, delivered to your doorstep with care.
               </motion.p>
@@ -69,12 +69,12 @@ function Home() {
           </div>
 
           {/* Decorative elements */}
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[var(--color-accent)]/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-[var(--color-secondary)]/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl pointer-events-none" />
         </section>
 
         {/* Trust Badges */}
-        <section className="border-y border-[var(--color-border)] bg-[var(--color-bg-surface)]/50">
+        <section className="border-y border-border bg-(--color-bg-surface)/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <motion.div
               initial={{ opacity: 0 }}
@@ -89,12 +89,12 @@ function Home() {
                 { icon: ShoppingBasketIcon, label: "Easy Returns", sub: "30-day policy" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[var(--color-bg-secondary)] flex items-center justify-center">
-                    <item.icon sx={{ fontSize: 20 }} className="text-[var(--color-accent)]" />
+                  <div className="shrink-0 w-10 h-10 rounded-lg bg-bg-secondary flex items-center justify-center">
+                    <item.icon sx={{ fontSize: 20 }} className="text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-[var(--color-text-primary)]">{item.label}</p>
-                    <p className="text-xs text-[var(--color-text-muted)]">{item.sub}</p>
+                    <p className="text-sm font-medium text-text-primary">{item.label}</p>
+                    <p className="text-xs text-text-muted">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -113,10 +113,8 @@ function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="font-display text-3xl md:text-4xl text-[var(--color-text-primary)] mb-4">
-              Featured Products
-            </h2>
-            <p className="text-[var(--color-text-secondary)] max-w-md mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-text-primary mb-4">Featured Products</h2>
+            <p className="text-text-secondary max-w-md mx-auto">
               Handpicked selection of our most popular items
             </p>
           </motion.div>
@@ -126,9 +124,9 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[var(--color-border)] py-8">
+      <footer className="border-t border-border py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm text-[var(--color-text-muted)]">Made with care by Bucketify</p>
+          <p className="text-sm text-text-muted">Made with care by Bucketify</p>
         </div>
       </footer>
     </div>

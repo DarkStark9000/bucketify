@@ -7,7 +7,7 @@ function NavCartinfo() {
 
   return (
     <motion.div 
-      className="relative flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-[var(--color-bg-secondary)]"
+      className="relative flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-bg-secondary"
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
@@ -15,7 +15,7 @@ function NavCartinfo() {
       <div className="relative">
         <ShoppingCartIcon 
           sx={{ fontSize: 22 }} 
-          className="text-[var(--color-text-secondary)]"
+          className="text-text-secondary"
         />
         
         {/* Badge */}
@@ -31,7 +31,7 @@ function NavCartinfo() {
       </div>
       
       {/* Label */}
-      <span className="hidden sm:block text-sm font-medium text-[var(--color-text-primary)]">
+      <span className="hidden sm:block text-sm font-medium text-text-primary">
         Cart
       </span>
     </motion.div>

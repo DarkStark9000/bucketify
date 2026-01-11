@@ -29,9 +29,9 @@ function Products() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {[...Array(8)].map((_, i) => (
           <div key={i} className="card p-4 animate-pulse">
-            <div className="aspect-square rounded-lg bg-[var(--color-bg-secondary)] mb-4" />
-            <div className="h-4 bg-[var(--color-bg-secondary)] rounded w-3/4 mb-2" />
-            <div className="h-4 bg-[var(--color-bg-secondary)] rounded w-1/2" />
+            <div className="aspect-square rounded-lg bg-bg-secondary mb-4" />
+            <div className="h-4 bg-bg-secondary rounded w-3/4 mb-2" />
+            <div className="h-4 bg-bg-secondary rounded w-1/2" />
           </div>
         ))}
       </div>
@@ -41,7 +41,7 @@ function Products() {
   if (error) {
     return (
       <div className="text-center py-12">
-        <p className="text-[var(--color-error)]">Failed to load products: {error}</p>
+        <p className="text-error">Failed to load products: {error}</p>
       </div>
     );
   }
@@ -49,13 +49,13 @@ function Products() {
   if (shopData.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-[var(--color-text-muted)]">No products available</p>
+        <p className="text-text-muted">No products available</p>
       </div>
     );
   }
 
   return (
-    <motion.div 
+    <motion.div
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       initial="hidden"
       animate="visible"
@@ -64,9 +64,9 @@ function Products() {
         visible: {
           opacity: 1,
           transition: {
-            staggerChildren: 0.08
-          }
-        }
+            staggerChildren: 0.08,
+          },
+        },
       }}
     >
       {shopData.map((item, index) => (

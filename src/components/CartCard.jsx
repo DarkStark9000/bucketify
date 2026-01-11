@@ -19,26 +19,22 @@ function CartCard({ product, index }) {
     >
       <div className="flex gap-4 md:gap-6">
         {/* Product Image */}
-        <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg bg-[var(--color-bg-secondary)] overflow-hidden">
-          <img 
-            className="w-full h-full object-contain p-2" 
-            src={product.imageurl} 
-            alt={product.name}
-          />
+        <div className="shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg bg-bg-secondary overflow-hidden">
+          <img className="w-full h-full object-contain p-2" src={product.imageurl} alt={product.name} />
         </div>
 
         {/* Product Details */}
         <div className="flex-1 min-w-0 flex flex-col">
           {/* Title and Remove */}
           <div className="flex items-start justify-between gap-2 mb-2">
-            <h3 className="text-sm md:text-base font-medium text-[var(--color-text-primary)] line-clamp-2 flex-1">
+            <h3 className="text-sm md:text-base font-medium text-text-primary line-clamp-2 flex-1">
               {product.name}
             </h3>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => dispatch(removeFromCart(product.name))}
-              className="flex-shrink-0 p-1.5 text-[var(--color-text-muted)] hover:text-[var(--color-error)] hover:bg-[var(--color-error)]/10 rounded-lg transition-colors"
+              className="shrink-0 p-1.5 text-text-muted hover:text-error hover:bg-error/10 rounded-lg transition-colors"
               title="Remove item"
             >
               <DeleteOutlineIcon sx={{ fontSize: 18 }} />
@@ -46,9 +42,7 @@ function CartCard({ product, index }) {
           </div>
 
           {/* Price */}
-          <span className="price price-small mb-3">
-            ${product.price.toFixed(2)}
-          </span>
+          <span className="price price-small mb-3">${product.price.toFixed(2)}</span>
 
           {/* Spacer */}
           <div className="flex-1" />
@@ -64,16 +58,14 @@ function CartCard({ product, index }) {
               >
                 <RemoveIcon sx={{ fontSize: 16 }} />
               </button>
-              <span className="text-sm font-medium text-[var(--color-text-primary)]">
-                {product.quantity}
-              </span>
+              <span className="text-sm font-medium text-text-primary">{product.quantity}</span>
               <button onClick={() => dispatch(addSingularItem(product.name))}>
                 <AddIcon sx={{ fontSize: 16 }} />
               </button>
             </div>
 
             {/* Line Total */}
-            <span className="text-base font-semibold text-[var(--color-text-primary)]">
+            <span className="text-base font-semibold text-text-primary">
               ${(product.price * product.quantity).toFixed(2)}
             </span>
           </div>

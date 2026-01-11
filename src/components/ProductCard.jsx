@@ -33,21 +33,21 @@ function ProductCard({ item }) {
     <motion.div
       variants={{
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } },
       }}
     >
       <div className="card group overflow-hidden flex flex-col h-full">
         {/* Image Container */}
         <div className="product-image">
-          <img 
-            src={imgError ? FALLBACK_IMAGE : (item.image || FALLBACK_IMAGE)} 
+          <img
+            src={imgError ? FALLBACK_IMAGE : item.image || FALLBACK_IMAGE}
             alt={item.title || "Product"}
             loading="lazy"
             onError={() => setImgError(true)}
           />
-          
+
           {/* Category badge */}
-          <span className="absolute top-3 left-3 px-2.5 py-1 text-[10px] uppercase tracking-wider font-semibold text-[var(--color-text-muted)] bg-[var(--color-bg-surface)]/90 backdrop-blur-sm rounded-full border border-[var(--color-border)]">
+          <span className="absolute top-3 left-3 px-2.5 py-1 text-[10px] uppercase tracking-wider font-semibold text-text-muted bg-(--color-bg-surface)/90 backdrop-blur-sm rounded-full border border-border">
             {item.category}
           </span>
         </div>
@@ -55,7 +55,7 @@ function ProductCard({ item }) {
         {/* Content */}
         <div className="flex flex-col flex-1 p-4">
           {/* Title */}
-          <h3 className="font-body text-sm font-medium text-[var(--color-text-primary)] line-clamp-2 mb-2 min-h-[2.5rem]">
+          <h3 className="font-body text-sm font-medium text-text-primary line-clamp-2 mb-2 min-h-[2.5rem]">
             {item.title}
           </h3>
 
@@ -66,7 +66,7 @@ function ProductCard({ item }) {
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className={`w-3.5 h-3.5 ${i < Math.round(item.rating.rate) ? 'text-[var(--color-warning)]' : 'text-[var(--color-border)]'}`}
+                    className={`w-3.5 h-3.5 ${i < Math.round(item.rating.rate) ? "text-warning" : "text-border"}`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -74,9 +74,7 @@ function ProductCard({ item }) {
                   </svg>
                 ))}
               </div>
-              <span className="text-xs text-[var(--color-text-muted)]">
-                ({item.rating.count})
-              </span>
+              <span className="text-xs text-text-muted">({item.rating.count})</span>
             </div>
           )}
 
@@ -84,22 +82,22 @@ function ProductCard({ item }) {
           <div className="flex-1" />
 
           {/* Price and Actions */}
-          <div className="flex items-center justify-between gap-2 pt-3 border-t border-[var(--color-border)]">
-            <span className="price">
-              ${(item.price ?? 0).toFixed(2)}
-            </span>
+          <div className="flex items-center justify-between gap-2 pt-3 border-t border-border">
+            <span className="price">${(item.price ?? 0).toFixed(2)}</span>
 
             <div className="flex items-center gap-2">
               {/* Quantity select */}
               <select
-                className="h-9 px-2 text-sm bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg cursor-pointer focus:outline-none focus:border-[var(--color-accent)] transition-colors"
+                className="h-9 px-2 text-sm bg-bg-secondary border border-border rounded-lg cursor-pointer focus:outline-none focus:border-accent transition-colors"
                 name="quantity"
                 id={`quantity-${item.id}`}
                 value={quantity}
                 onChange={handleQuantityChange}
               >
-                {[1, 2, 3, 4, 5].map(num => (
-                  <option key={num} value={num}>{num}</option>
+                {[1, 2, 3, 4, 5].map((num) => (
+                  <option key={num} value={num}>
+                    {num}
+                  </option>
                 ))}
               </select>
 
@@ -108,16 +106,14 @@ function ProductCard({ item }) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleAddToCart}
-                className={`btn-primary h-9 px-3 text-sm ${isAdded ? 'bg-[var(--color-success)]' : ''}`}
-                style={{ 
-                  minWidth: '44px',
-                  transition: 'background-color 0.2s ease'
+                className={`btn-primary h-9 px-3 text-sm ${isAdded ? "bg-success" : ""}`}
+                style={{
+                  minWidth: "44px",
+                  transition: "background-color 0.2s ease",
                 }}
               >
                 <AddShoppingCartIcon sx={{ fontSize: 18 }} />
-                <span className="hidden sm:inline">
-                  {isAdded ? 'Added!' : 'Add'}
-                </span>
+                <span className="hidden sm:inline">{isAdded ? "Added!" : "Add"}</span>
               </motion.button>
             </div>
           </div>

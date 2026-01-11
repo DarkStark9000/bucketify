@@ -24,14 +24,14 @@ function Cart() {
         >
           <NavLink
             to="/"
-            className="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4"
+            className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-text-primary transition-colors mb-4"
           >
             <ArrowBackIcon sx={{ fontSize: 16 }} />
             Continue Shopping
           </NavLink>
 
-          <h1 className="font-display text-3xl md:text-4xl text-[var(--color-text-primary)]">Your Cart</h1>
-          <p className="text-[var(--color-text-secondary)] mt-1">
+          <h1 className="font-display text-3xl md:text-4xl text-text-primary">Your Cart</h1>
+          <p className="text-text-secondary mt-1">
             {productInCart.length} {productInCart.length === 1 ? "item" : "items"}
           </p>
         </motion.div>
@@ -62,11 +62,11 @@ function Cart() {
             transition={{ duration: 0.5 }}
             className="text-center py-16 md:py-24"
           >
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--color-bg-secondary)] flex items-center justify-center">
-              <ShoppingCartIcon sx={{ fontSize: 32 }} className="text-[var(--color-text-muted)]" />
+            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-bg-secondary flex items-center justify-center">
+              <ShoppingCartIcon sx={{ fontSize: 32 }} className="text-text-muted" />
             </div>
-            <h2 className="font-display text-2xl text-[var(--color-text-primary)] mb-2">Your cart is empty</h2>
-            <p className="text-[var(--color-text-secondary)] mb-8 max-w-sm mx-auto">
+            <h2 className="font-display text-2xl text-text-primary mb-2">Your cart is empty</h2>
+            <p className="text-text-secondary mb-8 max-w-sm mx-auto">
               Looks like you haven&apos;t added any items to your cart yet. Start shopping to fill it up!
             </p>
             <NavLink to="/">

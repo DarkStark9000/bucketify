@@ -17,20 +17,20 @@ function SearchBar() {
         <div
           className={`
             flex items-center gap-3 w-full h-12 px-4
-            bg-[var(--color-bg-surface)] 
+            bg-(--color-bg-surface) 
             border rounded-xl
             transition-all duration-200
             ${isFocused 
-              ? "border-[var(--color-accent)] shadow-[0_0_0_3px_var(--color-accent-subtle)]" 
-              : "border-[var(--color-border)] shadow-sm hover:border-[var(--color-border-strong)]"
+              ? "border-accent shadow-[0_0_0_3px_var(--color-accent-subtle)]" 
+              : "border-border shadow-sm hover:border-border-strong"
             }
           `}
         >
           {/* Search icon - fixed position, doesn't overlap */}
           <SearchIcon 
             sx={{ fontSize: 20 }} 
-            className={`flex-shrink-0 transition-colors duration-200 ${
-              isFocused ? "text-[var(--color-accent)]" : "text-[var(--color-text-muted)]"
+            className={`shrink-0 transition-colors duration-200 ${
+              isFocused ? "text-accent" : "text-text-muted"
             }`}
           />
 
@@ -45,8 +45,8 @@ function SearchBar() {
             className="
               flex-1 w-full h-full
               bg-transparent 
-              text-[15px] text-[var(--color-text-primary)]
-              placeholder:text-[var(--color-text-muted)]
+              text-[15px] text-text-primary
+              placeholder:text-text-muted
               outline-none border-none
               font-body
             "
@@ -54,7 +54,7 @@ function SearchBar() {
 
           {/* Keyboard shortcut hint - only show when not focused and empty */}
           {!isFocused && !searchValue && (
-            <kbd className="hidden lg:inline-flex items-center px-2 py-1 text-[11px] font-medium text-[var(--color-text-muted)] bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-md">
+            <kbd className="hidden lg:inline-flex items-center px-2 py-1 text-[11px] font-medium text-text-muted bg-bg-secondary border border-border rounded-md">
               /
             </kbd>
           )}
@@ -63,7 +63,7 @@ function SearchBar() {
           {searchValue && (
             <button
               onClick={() => setSearchValue("")}
-              className="flex-shrink-0 p-1 text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors"
+              className="shrink-0 p-1 text-text-muted hover:text-text-primary transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

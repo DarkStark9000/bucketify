@@ -18,18 +18,16 @@ function CartTotal() {
       transition={{ duration: 0.5, delay: 0.2 }}
       className="card-elevated p-6"
     >
-      <h2 className="font-display text-xl text-[var(--color-text-primary)] mb-6">
-        Order Summary
-      </h2>
+      <h2 className="font-display text-xl text-text-primary mb-6">Order Summary</h2>
 
       {/* Line Items */}
       <div className="space-y-3 mb-6">
         {productInCart.map((product) => (
           <div key={product.name} className="flex justify-between text-sm">
-            <span className="text-[var(--color-text-secondary)] truncate max-w-[60%]">
-              {product.name} <span className="text-[var(--color-text-muted)]">x{product.quantity}</span>
+            <span className="text-text-secondary truncate max-w-[60%]">
+              {product.name} <span className="text-text-muted">x{product.quantity}</span>
             </span>
-            <span className="text-[var(--color-text-primary)] font-medium">
+            <span className="text-text-primary font-medium">
               ${(product.price * product.quantity).toFixed(2)}
             </span>
           </div>
@@ -40,25 +38,23 @@ function CartTotal() {
 
       {/* Subtotal */}
       <div className="flex justify-between text-sm mb-2">
-        <span className="text-[var(--color-text-secondary)]">Subtotal</span>
-        <span className="text-[var(--color-text-primary)]">${subtotal.toFixed(2)}</span>
+        <span className="text-text-secondary">Subtotal</span>
+        <span className="text-text-primary">${subtotal.toFixed(2)}</span>
       </div>
 
       {/* Shipping */}
       <div className="flex justify-between text-sm mb-4">
-        <span className="text-[var(--color-text-secondary)]">Shipping</span>
-        <span className={shipping === 0 ? "text-[var(--color-success)] font-medium" : "text-[var(--color-text-primary)]"}>
+        <span className="text-text-secondary">Shipping</span>
+        <span className={shipping === 0 ? "text-success font-medium" : "text-text-primary"}>
           {shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}
         </span>
       </div>
 
       {/* Free shipping notice */}
       {subtotal < 50 && subtotal > 0 && (
-        <div className="flex items-center gap-2 p-3 mb-4 rounded-lg bg-[var(--color-accent-subtle)] border border-[var(--color-accent)]/20">
-          <LocalShippingIcon sx={{ fontSize: 18 }} className="text-[var(--color-accent)]" />
-          <p className="text-xs text-[var(--color-accent)]">
-            Add ${(50 - subtotal).toFixed(2)} more for free shipping
-          </p>
+        <div className="flex items-center gap-2 p-3 mb-4 rounded-lg bg-accent-subtle border border-accent/20">
+          <LocalShippingIcon sx={{ fontSize: 18 }} className="text-accent" />
+          <p className="text-xs text-accent">Add ${(50 - subtotal).toFixed(2)} more for free shipping</p>
         </div>
       )}
 
@@ -66,22 +62,20 @@ function CartTotal() {
 
       {/* Total */}
       <div className="flex justify-between items-baseline mb-6">
-        <span className="text-base font-medium text-[var(--color-text-primary)]">Total</span>
-        <span className="text-2xl font-display text-[var(--color-text-primary)]">
-          ${total.toFixed(2)}
-        </span>
+        <span className="text-base font-medium text-text-primary">Total</span>
+        <span className="text-2xl font-display text-text-primary">${total.toFixed(2)}</span>
       </div>
 
       {/* Checkout Button */}
       {productInCart.length > 0 && <CheckoutAndEmail />}
 
       {/* Trust badges */}
-      <div className="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-[var(--color-border)]">
-        <div className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
+      <div className="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-border">
+        <div className="flex items-center gap-1.5 text-text-muted">
           <VerifiedUserIcon sx={{ fontSize: 14 }} />
           <span className="text-xs">Secure Checkout</span>
         </div>
-        <div className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
+        <div className="flex items-center gap-1.5 text-text-muted">
           <LocalShippingIcon sx={{ fontSize: 14 }} />
           <span className="text-xs">Fast Delivery</span>
         </div>
