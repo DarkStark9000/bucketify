@@ -13,7 +13,7 @@ function Cart() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         {/* Header */}
         <motion.div
@@ -22,19 +22,17 @@ function Cart() {
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <NavLink 
-            to="/" 
+          <NavLink
+            to="/"
             className="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4"
           >
             <ArrowBackIcon sx={{ fontSize: 16 }} />
             Continue Shopping
           </NavLink>
-          
-          <h1 className="font-display text-3xl md:text-4xl text-[var(--color-text-primary)]">
-            Your Cart
-          </h1>
+
+          <h1 className="font-display text-3xl md:text-4xl text-[var(--color-text-primary)]">Your Cart</h1>
           <p className="text-[var(--color-text-secondary)] mt-1">
-            {productInCart.length} {productInCart.length === 1 ? 'item' : 'items'}
+            {productInCart.length} {productInCart.length === 1 ? "item" : "items"}
           </p>
         </motion.div>
 
@@ -67,18 +65,12 @@ function Cart() {
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--color-bg-secondary)] flex items-center justify-center">
               <ShoppingCartIcon sx={{ fontSize: 32 }} className="text-[var(--color-text-muted)]" />
             </div>
-            <h2 className="font-display text-2xl text-[var(--color-text-primary)] mb-2">
-              Your cart is empty
-            </h2>
+            <h2 className="font-display text-2xl text-[var(--color-text-primary)] mb-2">Your cart is empty</h2>
             <p className="text-[var(--color-text-secondary)] mb-8 max-w-sm mx-auto">
-              Looks like you haven't added any items to your cart yet. Start shopping to fill it up!
+              Looks like you haven&apos;t added any items to your cart yet. Start shopping to fill it up!
             </p>
             <NavLink to="/">
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="btn-primary"
-              >
+              <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="btn-primary">
                 <ShoppingCartIcon sx={{ fontSize: 18 }} />
                 Start Shopping
               </motion.button>

@@ -37,7 +37,7 @@ function Home() {
               >
                 Discover Products
                 <br />
-                <span className="text-[var(--color-accent)]">You'll Love</span>
+                <span className="text-[var(--color-accent)]">You&apos;ll Love</span>
               </motion.h1>
 
               {/* Subtitle */}
