@@ -1,0 +1,935 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Apple iPhone 15 Pro Max 256GB",
+      "price": 1199.99,
+      "description": "The most powerful iPhone ever with A17 Pro chip, titanium design, 48MP camera system with 5x optical zoom, and Action button. Features Dynamic Island and always-on display.",
+      "category": "smartphones",
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 2847 }
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S24 Ultra 512GB",
+      "price": 1299.99,
+      "description": "Premium flagship with Galaxy AI, 200MP camera, built-in S Pen, titanium frame, and QHD+ Dynamic AMOLED display. 5000mAh battery with 45W fast charging.",
+      "category": "smartphones",
+      "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1923 }
+    },
+    {
+      "id": 3,
+      "title": "Google Pixel 8 Pro 256GB",
+      "price": 999.99,
+      "description": "Google's smartest phone with Tensor G3 chip, best-in-class computational photography, 7 years of OS updates, and advanced AI features including Magic Eraser.",
+      "category": "smartphones",
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 1456 }
+    },
+    {
+      "id": 4,
+      "title": "MacBook Pro 16-inch M3 Max",
+      "price": 3499.99,
+      "description": "Ultimate laptop for professionals with M3 Max chip, up to 128GB unified memory, Liquid Retina XDR display, 22-hour battery life, and exceptional performance.",
+      "category": "laptops",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80",
+      "rating": { "rate": 4.9, "count": 987 }
+    },
+    {
+      "id": 5,
+      "title": "Dell XPS 15 OLED Laptop",
+      "price": 1899.99,
+      "description": "Premium Windows laptop with 13th Gen Intel Core i7, 32GB RAM, 1TB SSD, stunning 3.5K OLED display, and InfinityEdge design. Perfect for creators.",
+      "category": "laptops",
+      "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 743 }
+    },
+    {
+      "id": 6,
+      "title": "ASUS ROG Zephyrus G14 Gaming Laptop",
+      "price": 1599.99,
+      "description": "Powerful gaming laptop with AMD Ryzen 9, NVIDIA RTX 4070, 165Hz QHD display, AniMe Matrix LED lid, and exceptional portability for gamers on the go.",
+      "category": "laptops",
+      "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 892 }
+    },
+    {
+      "id": 7,
+      "title": "iPad Pro 12.9-inch M2",
+      "price": 1099.99,
+      "description": "The ultimate iPad with M2 chip, Liquid Retina XDR display, ProMotion technology, Face ID, Thunderbolt port, and Apple Pencil hover support.",
+      "category": "tablets",
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 1567 }
+    },
+    {
+      "id": 8,
+      "title": "Samsung Galaxy Tab S9 Ultra",
+      "price": 1199.99,
+      "description": "Premium Android tablet with 14.6-inch Dynamic AMOLED 2X display, Snapdragon 8 Gen 2, S Pen included, IP68 water resistance, and DeX mode.",
+      "category": "tablets",
+      "image": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 678 }
+    },
+    {
+      "id": 9,
+      "title": "Sony WH-1000XM5 Wireless Headphones",
+      "price": 399.99,
+      "description": "Industry-leading noise cancellation with 8 microphones, 30-hour battery life, speak-to-chat, multipoint connection, and exceptional sound quality.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 3421 }
+    },
+    {
+      "id": 10,
+      "title": "Apple AirPods Pro 2nd Generation",
+      "price": 249.99,
+      "description": "Active Noise Cancellation, Adaptive Transparency, Personalized Spatial Audio, and up to 6 hours of listening time. MagSafe charging case included.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 5678 }
+    },
+    {
+      "id": 11,
+      "title": "Bose QuietComfort Ultra Headphones",
+      "price": 429.99,
+      "description": "World-class noise cancellation, Immersive Audio for spatial sound, up to 24-hour battery, and premium comfort for extended listening sessions.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 1234 }
+    },
+    {
+      "id": 12,
+      "title": "Apple Watch Ultra 2",
+      "price": 799.99,
+      "description": "The most rugged and capable Apple Watch with 49mm titanium case, precision dual-frequency GPS, 36-hour battery life, and 100m water resistance.",
+      "category": "smartwatches",
+      "image": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 1876 }
+    },
+    {
+      "id": 13,
+      "title": "Samsung Galaxy Watch 6 Classic",
+      "price": 399.99,
+      "description": "Premium smartwatch with rotating bezel, Super AMOLED display, advanced health monitoring, sleep coaching, and up to 40 hours of battery life.",
+      "category": "smartwatches",
+      "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 923 }
+    },
+    {
+      "id": 14,
+      "title": "Garmin Fenix 7X Solar",
+      "price": 899.99,
+      "description": "Ultimate multisport GPS watch with solar charging, up to 37 days battery life, advanced training metrics, maps, and rugged titanium bezel.",
+      "category": "smartwatches",
+      "image": "https://images.unsplash.com/photo-1508685096489-7afe182e0369?w=800&q=80",
+      "rating": { "rate": 4.9, "count": 567 }
+    },
+    {
+      "id": 15,
+      "title": "Sony Alpha A7 IV Mirrorless Camera",
+      "price": 2499.99,
+      "description": "Full-frame 33MP sensor, 4K 60p video, real-time Eye AF for humans and animals, 10 fps continuous shooting, and exceptional low-light performance.",
+      "category": "cameras",
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 654 }
+    },
+    {
+      "id": 16,
+      "title": "Canon EOS R6 Mark II",
+      "price": 2299.99,
+      "description": "24.2MP full-frame mirrorless camera with 40 fps continuous shooting, 6K RAW video, Dual Pixel CMOS AF II, and in-body image stabilization.",
+      "category": "cameras",
+      "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 432 }
+    },
+    {
+      "id": 17,
+      "title": "DJI Mavic 3 Pro Drone",
+      "price": 2199.99,
+      "description": "Triple-camera flagship drone with Hasselblad camera, 43-min flight time, omnidirectional obstacle sensing, and 5.1K video recording.",
+      "category": "cameras",
+      "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80",
+      "rating": { "rate": 4.9, "count": 789 }
+    },
+    {
+      "id": 18,
+      "title": "PlayStation 5 Console",
+      "price": 499.99,
+      "description": "Next-gen gaming with ultra-high speed SSD, ray tracing, 4K gaming at 120fps, haptic feedback DualSense controller, and 3D Audio technology.",
+      "category": "gaming",
+      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=800&q=80",
+      "rating": { "rate": 4.9, "count": 8765 }
+    },
+    {
+      "id": 19,
+      "title": "Xbox Series X Console",
+      "price": 499.99,
+      "description": "Most powerful Xbox ever with 12 teraflops of processing power, 4K gaming at 120fps, Quick Resume, and thousands of games with Game Pass.",
+      "category": "gaming",
+      "image": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 5432 }
+    },
+    {
+      "id": 20,
+      "title": "Nintendo Switch OLED Model",
+      "price": 349.99,
+      "description": "Hybrid gaming console with vibrant 7-inch OLED screen, enhanced audio, 64GB internal storage, and wide adjustable stand for tabletop mode.",
+      "category": "gaming",
+      "image": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 4321 }
+    },
+    {
+      "id": 21,
+      "title": "Sonos Arc Premium Soundbar",
+      "price": 899.99,
+      "description": "Premium smart soundbar with Dolby Atmos, 11 high-performance drivers, voice control, and seamless integration with Sonos multi-room audio.",
+      "category": "audio",
+      "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 22,
+      "title": "JBL Charge 5 Portable Speaker",
+      "price": 179.99,
+      "description": "Powerful portable Bluetooth speaker with 20 hours of playtime, IP67 waterproof and dustproof rating, built-in powerbank, and PartyBoost.",
+      "category": "audio",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 3456 }
+    },
+    {
+      "id": 23,
+      "title": "Amazon Echo Show 10",
+      "price": 249.99,
+      "description": "Smart display with motion that follows you, 10.1-inch HD screen, premium sound, built-in Zigbee hub, and Alexa voice assistant.",
+      "category": "smart home",
+      "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800&q=80",
+      "rating": { "rate": 4.4, "count": 2345 }
+    },
+    {
+      "id": 24,
+      "title": "Google Nest Hub Max",
+      "price": 229.99,
+      "description": "10-inch smart display with Nest Cam built-in, Google Assistant, Face Match, hand gestures, and excellent sound for music and video calls.",
+      "category": "smart home",
+      "image": "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 1567 }
+    },
+    {
+      "id": 25,
+      "title": "Ring Video Doorbell Pro 2",
+      "price": 249.99,
+      "description": "Premium video doorbell with Head-to-Toe HD+ video, 3D Motion Detection, Bird's Eye View, and advanced pre-roll video recording.",
+      "category": "smart home",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 3456 }
+    },
+    {
+      "id": 26,
+      "title": "Philips Hue Starter Kit",
+      "price": 199.99,
+      "description": "Smart lighting starter kit with 4 color-capable bulbs, Hue Bridge, and app control. 16 million colors and voice control compatible.",
+      "category": "smart home",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 4567 }
+    },
+    {
+      "id": 27,
+      "title": "Anker 737 Power Bank 24000mAh",
+      "price": 149.99,
+      "description": "High-capacity portable charger with 140W output, smart display, USB-C and USB-A ports, and enough power for laptops, tablets, and phones.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 2345 }
+    },
+    {
+      "id": 28,
+      "title": "Logitech MX Master 3S Mouse",
+      "price": 99.99,
+      "description": "Premium wireless mouse with MagSpeed electromagnetic scrolling, 8K DPI sensor, quiet clicks, USB-C charging, and multi-device connectivity.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 5678 }
+    },
+    {
+      "id": 29,
+      "title": "Apple Magic Keyboard with Touch ID",
+      "price": 199.99,
+      "description": "Wireless keyboard with Touch ID for secure authentication, numeric keypad, low-profile design, and Lightning port for charging.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 1234 }
+    },
+    {
+      "id": 30,
+      "title": "Samsung 49-inch Odyssey G9 Monitor",
+      "price": 1299.99,
+      "description": "Ultra-wide curved gaming monitor with 240Hz refresh rate, 1ms response time, QLED technology, and 1000R curvature for immersive gaming.",
+      "category": "monitors",
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 876 }
+    },
+    {
+      "id": 31,
+      "title": "LG UltraFine 27-inch 5K Display",
+      "price": 1299.99,
+      "description": "Stunning 5K resolution display optimized for Mac, P3 wide color gamut, 500 nits brightness, and Thunderbolt 3 connectivity.",
+      "category": "monitors",
+      "image": "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 432 }
+    },
+    {
+      "id": 32,
+      "title": "Kindle Paperwhite Signature Edition",
+      "price": 189.99,
+      "description": "Premium e-reader with 6.8-inch display, adjustable warm light, wireless charging, auto-adjusting light sensor, and 32GB storage.",
+      "category": "e-readers",
+      "image": "https://images.unsplash.com/photo-1592659762303-90081d34b277?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 8765 }
+    },
+    {
+      "id": 33,
+      "title": "GoPro HERO12 Black",
+      "price": 399.99,
+      "description": "Flagship action camera with 5.3K video, 27MP photos, HyperSmooth 6.0 stabilization, waterproof to 33ft, and HDR video support.",
+      "category": "cameras",
+      "image": "https://images.unsplash.com/photo-1564466809058-bf4114d55352?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 2345 }
+    },
+    {
+      "id": 34,
+      "title": "Razer BlackWidow V4 Pro Keyboard",
+      "price": 229.99,
+      "description": "Premium mechanical gaming keyboard with Razer Green switches, RGB lighting, programmable macros, wrist rest, and dedicated media controls.",
+      "category": "gaming",
+      "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1567 }
+    },
+    {
+      "id": 35,
+      "title": "SteelSeries Arctis Nova Pro Wireless",
+      "price": 349.99,
+      "description": "Premium gaming headset with active noise cancellation, hot-swappable batteries, high fidelity audio, and multi-system connectivity.",
+      "category": "gaming",
+      "image": "https://images.unsplash.com/photo-1599669454699-248893623440?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 987 }
+    },
+    {
+      "id": 36,
+      "title": "Elgato Stream Deck MK.2",
+      "price": 149.99,
+      "description": "Customizable streaming controller with 15 LCD keys, instant actions, plugins, and seamless integration with OBS, Twitch, and more.",
+      "category": "streaming",
+      "image": "https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 3456 }
+    },
+    {
+      "id": 37,
+      "title": "Blue Yeti X USB Microphone",
+      "price": 169.99,
+      "description": "Professional USB microphone with four capsule array, Blue VO!CE software, LED metering, and high-resolution recording for streaming.",
+      "category": "streaming",
+      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 4567 }
+    },
+    {
+      "id": 38,
+      "title": "Elgato Key Light Air",
+      "price": 129.99,
+      "description": "Professional LED panel for streaming and video calls with 1400 lumens, adjustable color temperature, and app-controlled brightness.",
+      "category": "streaming",
+      "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 2345 }
+    },
+    {
+      "id": 39,
+      "title": "Samsung T7 Shield 2TB SSD",
+      "price": 179.99,
+      "description": "Rugged portable SSD with IP65 rating, 1050MB/s transfer speeds, AES 256-bit encryption, and shock-resistant design.",
+      "category": "storage",
+      "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 3456 }
+    },
+    {
+      "id": 40,
+      "title": "WD Black SN850X 2TB NVMe SSD",
+      "price": 179.99,
+      "description": "High-performance gaming SSD with 7300MB/s read speeds, Game Mode 2.0, and RGB heatsink for optimal cooling.",
+      "category": "storage",
+      "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 41,
+      "title": "OnePlus 12 256GB",
+      "price": 799.99,
+      "description": "Flagship killer with Snapdragon 8 Gen 3, 50MP Hasselblad camera, 100W SUPERVOOC charging, and beautiful LTPO AMOLED display.",
+      "category": "smartphones",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 876 }
+    },
+    {
+      "id": 42,
+      "title": "Nothing Phone (2) 256GB",
+      "price": 599.99,
+      "description": "Unique transparent design with Glyph Interface LED lights, Snapdragon 8+ Gen 1, 50MP camera, and Nothing OS based on Android.",
+      "category": "smartphones",
+      "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=800&q=80",
+      "rating": { "rate": 4.4, "count": 543 }
+    },
+    {
+      "id": 43,
+      "title": "ASUS Zenbook 14 OLED",
+      "price": 1099.99,
+      "description": "Ultra-slim laptop with 2.8K OLED display, Intel Core Ultra 7, 16GB RAM, 512GB SSD, and stunning 90Hz refresh rate.",
+      "category": "laptops",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 654 }
+    },
+    {
+      "id": 44,
+      "title": "Lenovo ThinkPad X1 Carbon Gen 11",
+      "price": 1649.99,
+      "description": "Business ultrabook with 14-inch 2.8K OLED display, Intel Core i7 vPro, 32GB RAM, exceptional keyboard, and all-day battery life.",
+      "category": "laptops",
+      "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 432 }
+    },
+    {
+      "id": 45,
+      "title": "Sennheiser Momentum 4 Wireless",
+      "price": 379.99,
+      "description": "Audiophile-grade wireless headphones with 60-hour battery life, adaptive noise cancellation, and signature Sennheiser sound.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 46,
+      "title": "Beats Studio Pro",
+      "price": 349.99,
+      "description": "Premium wireless headphones with enhanced noise cancellation, lossless audio via USB-C, spatial audio, and up to 40 hours battery.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 2345 }
+    },
+    {
+      "id": 47,
+      "title": "Marshall Emberton II Speaker",
+      "price": 169.99,
+      "description": "Portable Bluetooth speaker with iconic Marshall design, 30+ hours battery, IP67 rating, and True Stereophonic multi-directional sound.",
+      "category": "audio",
+      "image": "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 1876 }
+    },
+    {
+      "id": 48,
+      "title": "Fitbit Sense 2",
+      "price": 299.99,
+      "description": "Advanced health smartwatch with stress management, ECG app, skin temperature sensor, GPS, and 6+ day battery life.",
+      "category": "smartwatches",
+      "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&q=80",
+      "rating": { "rate": 4.4, "count": 2345 }
+    },
+    {
+      "id": 49,
+      "title": "Oculus Quest 3 VR Headset",
+      "price": 499.99,
+      "description": "Next-gen standalone VR headset with mixed reality, Snapdragon XR2 Gen 2, 4K+ resolution, and breakthrough visual clarity.",
+      "category": "gaming",
+      "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 3456 }
+    },
+    {
+      "id": 50,
+      "title": "Dyson Zone Headphones",
+      "price": 949.99,
+      "description": "Revolutionary noise-cancelling headphones with optional air purification visor, Ultra mode noise cancellation, and Hi-Fi audio.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80",
+      "rating": { "rate": 4.2, "count": 234 }
+    },
+    {
+      "id": 51,
+      "title": "Premium Leather Laptop Messenger Bag",
+      "price": 149.99,
+      "description": "Handcrafted genuine leather messenger bag fits up to 15.6-inch laptops with padded compartment, multiple pockets, and adjustable strap.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 52,
+      "title": "Minimalist Slim RFID Blocking Wallet",
+      "price": 34.99,
+      "description": "Ultra-thin genuine leather wallet with RFID blocking technology, holds 8 cards plus cash, and features quick-access card slot.",
+      "category": "wallets",
+      "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 3456 }
+    },
+    {
+      "id": 53,
+      "title": "Titanium EDC Keychain Tool",
+      "price": 29.99,
+      "description": "Compact 10-in-1 titanium keychain tool with bottle opener, screwdriver, hex wrench, pry bar, and ruler. TSA compliant.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1583394293214-28eebc9d7cd8?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 876 }
+    },
+    {
+      "id": 54,
+      "title": "Ray-Ban Aviator Classic Sunglasses",
+      "price": 163.0,
+      "description": "Iconic pilot-style sunglasses with crystal green G-15 lenses, gold metal frame, and 100% UV protection. Timeless design since 1937.",
+      "category": "sunglasses",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 5678 }
+    },
+    {
+      "id": 55,
+      "title": "Hydro Flask 32oz Wide Mouth",
+      "price": 44.95,
+      "description": "Double-wall vacuum insulated water bottle keeps drinks cold 24 hours or hot 12 hours. BPA-free, dishwasher safe cap.",
+      "category": "bottles",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 8765 }
+    },
+    {
+      "id": 56,
+      "title": "Apple MagSafe Leather Wallet",
+      "price": 59.99,
+      "description": "Premium leather wallet with Find My support, holds up to 3 cards, strong MagSafe attachment, and shielded RFID protection.",
+      "category": "wallets",
+      "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
+      "rating": { "rate": 4.4, "count": 2345 }
+    },
+    {
+      "id": 57,
+      "title": "Oakley Holbrook XL Sunglasses",
+      "price": 177.0,
+      "description": "Classic square design with Prizm lenses for enhanced color and contrast, lightweight O Matter frame, and Three-Point Fit.",
+      "category": "sunglasses",
+      "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 58,
+      "title": "Peak Design Everyday Backpack V2",
+      "price": 289.95,
+      "description": "Versatile 20L backpack with MagLatch quick access, FlexFold dividers, weatherproof 400D nylon, and expandable capacity.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 1567 }
+    },
+    {
+      "id": 59,
+      "title": "Bellroy Slim Sleeve Wallet",
+      "price": 89.0,
+      "description": "Premium leather slim wallet with pull-tab access, holds 4-8 cards plus folded bills, and environmentally certified leather.",
+      "category": "wallets",
+      "image": "https://images.unsplash.com/photo-1612902456551-333ac5afa26e?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 987 }
+    },
+    {
+      "id": 60,
+      "title": "YETI Rambler 26oz Bottle",
+      "price": 40.0,
+      "description": "Durable stainless steel vacuum insulated bottle with TripleHaul cap, dishwasher safe, and puncture and rust resistant.",
+      "category": "bottles",
+      "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 4567 }
+    },
+    {
+      "id": 61,
+      "title": "Seiko Presage Automatic Watch",
+      "price": 495.0,
+      "description": "Japanese automatic movement watch with stunning textured dial, sapphire crystal, see-through caseback, and 50m water resistance.",
+      "category": "watches",
+      "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 876 }
+    },
+    {
+      "id": 62,
+      "title": "Tissot PRX Powermatic 80",
+      "price": 650.0,
+      "description": "Swiss automatic watch with 80-hour power reserve, integrated bracelet design, scratch-resistant sapphire, and 100m water resistance.",
+      "category": "watches",
+      "image": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 654 }
+    },
+    {
+      "id": 63,
+      "title": "Persol PO3019S Sunglasses",
+      "price": 289.0,
+      "description": "Italian-made sunglasses with iconic silver arrow, crystal lenses, flexible Meflecto temple system, and hand-polished acetate frame.",
+      "category": "sunglasses",
+      "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 543 }
+    },
+    {
+      "id": 64,
+      "title": "Fjallraven Kanken Classic Backpack",
+      "price": 80.0,
+      "description": "Iconic Swedish backpack with Vinylon F fabric, dual carrying options, padded shoulder straps, and front/side zip pockets.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 6789 }
+    },
+    {
+      "id": 65,
+      "title": "Montblanc Meisterstuck Card Holder",
+      "price": 245.0,
+      "description": "Luxury leather card holder with Montblanc emblem, 6 card slots, 2 open pockets, and European full-grain cowhide.",
+      "category": "wallets",
+      "image": "https://images.unsplash.com/photo-1606503153255-59d7fae0e6d0?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 234 }
+    },
+    {
+      "id": 66,
+      "title": "Stanley Adventure Quencher 40oz",
+      "price": 45.0,
+      "description": "Viral tumbler with double-wall vacuum insulation, FlowState lid with three positions, fits in cup holders, and splash-resistant.",
+      "category": "bottles",
+      "image": "https://images.unsplash.com/photo-1570831739435-6601aa3fa4fb?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 12345 }
+    },
+    {
+      "id": 67,
+      "title": "OtterBox Defender iPhone Case",
+      "price": 64.99,
+      "description": "Ultra-rugged phone case with multi-layer defense, port covers, antimicrobial additive, and 4x military-grade drop protection.",
+      "category": "phone cases",
+      "image": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 5678 }
+    },
+    {
+      "id": 68,
+      "title": "Casetify Impact iPhone Case",
+      "price": 55.0,
+      "description": "Customizable drop-proof case with up to 6.5ft drop protection, antimicrobial coating, and over 2000 designer prints.",
+      "category": "phone cases",
+      "image": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 3456 }
+    },
+    {
+      "id": 69,
+      "title": "Belkin 3-in-1 Wireless Charger",
+      "price": 149.99,
+      "description": "MagSafe compatible charging stand for iPhone, Apple Watch, and AirPods. 15W fast wireless charging with premium build.",
+      "category": "chargers",
+      "image": "https://images.unsplash.com/photo-1615526675159-e248c3021d3f?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 2345 }
+    },
+    {
+      "id": 70,
+      "title": "Anker Nano II 65W Charger",
+      "price": 45.99,
+      "description": "Ultra-compact GaN II charger powers laptops, tablets, and phones. 50% smaller than standard chargers with foldable plug.",
+      "category": "chargers",
+      "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 4567 }
+    },
+    {
+      "id": 71,
+      "title": "Hamilton Khaki Field Mechanical",
+      "price": 495.0,
+      "description": "Heritage military watch with hand-wound movement, 80-hour power reserve, NATO strap, and 50m water resistance.",
+      "category": "watches",
+      "image": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 765 }
+    },
+    {
+      "id": 72,
+      "title": "G-Shock GA-2100 CasiOak",
+      "price": 99.0,
+      "description": "Trendy octagonal bezel design with shock resistance, 200m water resistance, world time, and carbon core guard structure.",
+      "category": "watches",
+      "image": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 3456 }
+    },
+    {
+      "id": 73,
+      "title": "Tumi Alpha 3 Backpack",
+      "price": 495.0,
+      "description": "Premium ballistic nylon backpack with leather accents, laptop compartment, USB port, and anti-theft back pocket.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 543 }
+    },
+    {
+      "id": 74,
+      "title": "Apple AirTag 4-Pack",
+      "price": 99.0,
+      "description": "Precision Finding with Ultra Wideband, Find My network, water resistant, and replaceable battery lasts over a year.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1614442262468-4c21e7b56e4d?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 8765 }
+    },
+    {
+      "id": 75,
+      "title": "Tile Pro 2-Pack",
+      "price": 59.99,
+      "description": "Powerful Bluetooth tracker with 400ft range, loud ring, water-resistant design, and 1-year replaceable battery.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1587467512961-120760940315?w=800&q=80",
+      "rating": { "rate": 4.4, "count": 2345 }
+    },
+    {
+      "id": 76,
+      "title": "Secrid Miniwallet",
+      "price": 85.0,
+      "description": "Dutch-designed aluminum cardprotector wallet with leather cover, RFID-safe, holds 6+ cards, and patented slide mechanism.",
+      "category": "wallets",
+      "image": "https://images.unsplash.com/photo-1559526324-c1f275fbfa32?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 77,
+      "title": "Warby Parker Durand Glasses",
+      "price": 145.0,
+      "description": "Stylish acetate frames with scratch-resistant lenses, spring hinges, and free home try-on. Blue light filtering available.",
+      "category": "eyewear",
+      "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 2345 }
+    },
+    {
+      "id": 78,
+      "title": "Nalgene Wide Mouth 32oz",
+      "price": 14.95,
+      "description": "Legendary durable water bottle, BPA-free Tritan plastic, leak-proof, graduated measurements, and dishwasher safe.",
+      "category": "bottles",
+      "image": "https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 5678 }
+    },
+    {
+      "id": 79,
+      "title": "Moleskine Classic Notebook Large",
+      "price": 22.95,
+      "description": "Iconic hardcover notebook with ivory paper, ribbon bookmark, elastic closure, expandable inner pocket, and lay-flat binding.",
+      "category": "stationery",
+      "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 6789 }
+    },
+    {
+      "id": 80,
+      "title": "Lamy Safari Fountain Pen",
+      "price": 38.0,
+      "description": "German-engineered fountain pen with ergonomic grip, steel nib, transparent ink window, and iconic bauhaus design.",
+      "category": "stationery",
+      "image": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 2345 }
+    },
+    {
+      "id": 81,
+      "title": "Sony WF-1000XM5 Earbuds",
+      "price": 299.99,
+      "description": "World's smallest and lightest noise-cancelling earbuds with Hi-Res Audio, 8-hour battery, and IPX4 water resistance.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 2345 }
+    },
+    {
+      "id": 82,
+      "title": "Samsung Galaxy Buds2 Pro",
+      "price": 229.99,
+      "description": "Premium wireless earbuds with 24-bit Hi-Fi audio, intelligent ANC, 360 Audio, and comfortable ergonomic design.",
+      "category": "headphones",
+      "image": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 1876 }
+    },
+    {
+      "id": 83,
+      "title": "Herschel Little America Backpack",
+      "price": 110.0,
+      "description": "Classic mountaineering-inspired backpack with signature striped liner, padded laptop sleeve, and magnetic strap closures.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 4567 }
+    },
+    {
+      "id": 84,
+      "title": "Moment 58mm Tele Lens",
+      "price": 129.99,
+      "description": "Premium mobile lens for iPhone and Android with 2x optical zoom, cinema-grade glass, and professional image quality.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1621985673234-4c8ae2b40a88?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 876 }
+    },
+    {
+      "id": 85,
+      "title": "Osprey Daylite Plus Backpack",
+      "price": 75.0,
+      "description": "Versatile 20L daypack with mesh back panel, hydration compatible, front panel shove-it pocket, and dual compression straps.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 3456 }
+    },
+    {
+      "id": 86,
+      "title": "Orient Bambino Automatic",
+      "price": 279.0,
+      "description": "Classic dress watch with in-house automatic movement, domed mineral crystal, genuine leather strap, and exhibition caseback.",
+      "category": "watches",
+      "image": "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 1234 }
+    },
+    {
+      "id": 87,
+      "title": "Native Union Stow Sleeve",
+      "price": 69.99,
+      "description": "Premium laptop sleeve with genuine Italian leather, soft microfiber lining, and slim profile for MacBook protection.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 543 }
+    },
+    {
+      "id": 88,
+      "title": "Twelve South BookArc Stand",
+      "price": 59.99,
+      "description": "Vertical desktop stand for MacBook with silicone inserts, aluminum construction, and space-saving design.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 876 }
+    },
+    {
+      "id": 89,
+      "title": "MUJI Gel Ink Pens 10-Pack",
+      "price": 18.0,
+      "description": "Japanese gel ink pens with smooth 0.38mm tips, water-based pigment ink, and ergonomic hexagonal grip.",
+      "category": "stationery",
+      "image": "https://images.unsplash.com/photo-1586953208270-767889fa9b0e?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 4567 }
+    },
+    {
+      "id": 90,
+      "title": "Leuchtturm1917 Bullet Journal",
+      "price": 24.95,
+      "description": "Official bullet journal edition with index pages, numbered pages, 3 bookmarks, and signature thread-bound binding.",
+      "category": "stationery",
+      "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 3456 }
+    },
+    {
+      "id": 91,
+      "title": "Magsafe Car Mount",
+      "price": 49.99,
+      "description": "Strong magnetic car mount with 15W wireless charging, one-hand operation, and adjustable viewing angles.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1619409437906-8ec1d9f5fbd0?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 2345 }
+    },
+    {
+      "id": 92,
+      "title": "Spigen Tough Armor Case",
+      "price": 24.99,
+      "description": "Dual-layer protection case with kickstand, air cushion technology, raised bezels, and military-grade drop protection.",
+      "category": "phone cases",
+      "image": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 7890 }
+    },
+    {
+      "id": 93,
+      "title": "Patagonia Black Hole Duffel 55L",
+      "price": 159.0,
+      "description": "Highly weather-resistant duffel with backpack straps, recycled polyester ripstop, and organization pockets.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 1567 }
+    },
+    {
+      "id": 94,
+      "title": "Carhartt WIP Delta Shoulder Bag",
+      "price": 65.0,
+      "description": "Water-repellent crossbody bag with adjustable strap, main compartment with zipper, and front pocket.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80",
+      "rating": { "rate": 4.4, "count": 876 }
+    },
+    {
+      "id": 95,
+      "title": "Citizen Eco-Drive Promaster",
+      "price": 350.0,
+      "description": "Solar-powered dive watch with 200m water resistance, unidirectional bezel, lume markers, and never needs a battery.",
+      "category": "watches",
+      "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 1234 }
+    },
+    {
+      "id": 96,
+      "title": "Maui Jim Peahi Sunglasses",
+      "price": 319.0,
+      "description": "Polarized wrap-around sunglasses with PolarizedPlus2 technology, SuperThin Glass lenses, and spring hinges.",
+      "category": "sunglasses",
+      "image": "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=800&q=80",
+      "rating": { "rate": 4.8, "count": 654 }
+    },
+    {
+      "id": 97,
+      "title": "Orbitkey Key Organizer",
+      "price": 39.9,
+      "description": "Sleek leather key organizer holds 2-7 keys, eliminates bulk and jingling, with locking mechanism and accessory slot.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=800&q=80",
+      "rating": { "rate": 4.5, "count": 2345 }
+    },
+    {
+      "id": 98,
+      "title": "Bose SoundLink Flex Speaker",
+      "price": 149.0,
+      "description": "Portable Bluetooth speaker with deep bass, 12-hour battery, IP67 waterproof, and PositionIQ technology.",
+      "category": "audio",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 3456 }
+    },
+    {
+      "id": 99,
+      "title": "Aer Travel Pack 3",
+      "price": 289.0,
+      "description": "Carry-on travel backpack with clamshell opening, laptop compartment, shoe pocket, and organization panels.",
+      "category": "bags",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "rating": { "rate": 4.7, "count": 876 }
+    },
+    {
+      "id": 100,
+      "title": "Satechi USB-C Multiport Adapter",
+      "price": 79.99,
+      "description": "Premium aluminum hub with 4K HDMI, USB-C PD charging, SD card slots, USB 3.0 ports, and Gigabit Ethernet.",
+      "category": "accessories",
+      "image": "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=800&q=80",
+      "rating": { "rate": 4.6, "count": 2345 }
+    }
+  ],
+  "categories": [
+    "smartphones",
+    "laptops",
+    "tablets",
+    "headphones",
+    "smartwatches",
+    "cameras",
+    "gaming",
+    "audio",
+    "smart home",
+    "accessories",
+    "monitors",
+    "e-readers",
+    "streaming",
+    "storage",
+    "bags",
+    "wallets",
+    "sunglasses",
+    "bottles",
+    "watches",
+    "phone cases",
+    "chargers",
+    "eyewear",
+    "stationery"
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-11",
+    "totalProducts": 100,
+    "description": "Bucketify product catalog with electronics and daily accessories"
+  }
+}

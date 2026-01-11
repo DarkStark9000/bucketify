@@ -1,31 +1,41 @@
-import React from "react";
+import { motion } from "motion/react";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
 import HomeLogo from "./HomeLogo";
 import NavCartinfo from "./NavCartinfo";
 import NavUserInfo from "./NavUserInfo";
 import SearchBar from "./SearchBar";
-import Logout from "./Logout";
 
 function Navbar() {
-  const user = useSelector((state) => state.user.isUser);
-
   return (
-    <div className="sticky top-0 z-50 shadow-sm bg-white bg-opacity-50 bg-blur-lg">
-      <div className="flex justify-center items-center p-2 md:p-4 ml-2 lg:ml-4">
-        <NavLink to="/">
-          <HomeLogo />
-        </NavLink>
-        <SearchBar />
-        <div className="mx-auto mr-4 flex justify-center items-center gap-x-2 md:gap-x-4 lg:gap-x-6">
-          <NavUserInfo />
-          <NavLink to="/cart">
-            <NavCartinfo />
+    <motion.header
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      className="sticky top-0 z-50 glass-surface"
+    >
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo */}
+          <NavLink to="/" className="flex-shrink-0">
+            <HomeLogo />
           </NavLink>
-          {user.uid ? <Logout /> : <div />}
+
+          {/* Search - centered */}
+          <SearchBar />
+
+          {/* Right side actions */}
+          <div className="flex items-center gap-2">
+            <NavUserInfo />
+            <NavLink to="/cart">
+              <NavCartinfo />
+            </NavLink>
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+
+      {/* Bottom border accent */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[var(--color-border)] to-transparent" />
+    </motion.header>
   );
 }
 
